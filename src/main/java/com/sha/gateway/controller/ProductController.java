@@ -17,6 +17,7 @@ public class ProductController
     @GetMapping
     public ResponseEntity<?> getAll()
     {
+
         return ResponseEntity.ok(service.findAll());
     }
 

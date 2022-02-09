@@ -8,4 +8,6 @@ public abstract class AbstractProductService implements EntityService<JsonElemen
 {
     @Autowired
     protected ProductServiceCallable productServiceCallable;
+
+
 }

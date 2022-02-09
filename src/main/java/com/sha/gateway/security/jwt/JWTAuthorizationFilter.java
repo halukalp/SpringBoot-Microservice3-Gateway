@@ -20,9 +20,10 @@ public class JWTAuthorizationFilter extends OncePerRequestFilter
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException
     {
+        // kimligi dogrulanmis kullanici
         Authentication authentication = providable.getAuthentication(request);
 
-        /*
+        /*  gecerli mi degil mi ? -> expiration date
             SecurityContext, thread bazli olusturulan bir Container
             veya thread bazli olusturulan bir oturum nesnesi gibi dusunebiliriz.
          */
